@@ -1,0 +1,399 @@
+
+
+/* Prepare animations */
+
+.animate {
+  opacity: 0;
+  transition: opacity 1.5s, transform 1.5s, width 1.5s;
+  z-index: 3;
+}
+
+
+.animate.right {
+  transform: translateX(3vw);
+}
+
+.animate.left {
+  transform: translateX(-3vw);
+}
+
+
+.animate.top {
+  transform: translateY(-3vh);
+}
+
+
+
+.animate.bottom {
+  transform: translateY(3vh);
+}
+
+.animate.zoom-in {
+  transform: scale(0.9);
+}
+
+.animate.zoom-out {
+  transform: scale(1.1);
+}
+
+.animate.zoom-in-xl {
+  transform: scale(0.2);
+}
+
+.animate.zoom-out-xl {
+  transform: scale(2);
+}
+
+.animate.rotate-left {
+  transform: rotate(4deg);
+}
+
+.animate.rotate-right {
+  transform: rotate(-4deg);
+}
+
+.animate.spin {
+  transform: rotate(0deg);
+}
+
+.animate.spin-back {
+  transform: rotate(360deg);
+}
+
+.animate.spin-long {
+  transform: rotate(0deg);
+}
+
+.animate.spin-long-back {
+  transform: rotate(1080deg);
+}
+
+.animate.skew-left {
+  transform: skewX(-40deg);
+}
+
+.animate.skew-right {
+  transform: skewX(40deg);
+}
+
+
+
+/* Animate element on .animate.active */
+
+
+.animate.active {
+  opacity: 1;
+}
+
+.animate.active.left {
+  transform: translateX(0);
+}
+
+.animate.active.right {
+  transform: translateX(0);
+}
+
+.animate.active.top {
+  transform: translateY(0);
+}
+
+.animate.active.bottom {
+  transform: translateY(0);
+}
+
+.animate.active.zoom-in {
+  transform: scale(1);
+}
+
+.animate.active.zoom-out {
+  transform: scale(1);
+}
+
+.animate.active.zoom-in-xl {
+  transform: scale(1);
+}
+
+.animate.active.zoom-out-xl {
+  transform: scale(1);
+}
+
+.animate.active.rotate-left {
+  transform: rotate(0deg);
+}
+
+.animate.active.rotate-right {
+  transform: rotate(0deg);
+}
+
+.animate.active.spin {
+  transform: rotate(360deg);
+}
+
+.animate.active.spin-back {
+  transform: rotate(0deg);
+}
+
+.animate.active.spin-long {
+  transform: rotate(1080deg);
+}
+
+.animate.active.spin-long-back {
+  transform: rotate(0deg);
+}
+
+.animate.active.skew-left {
+  transform: skewX(0deg);
+}
+
+.animate.active.skew-right {
+  transform: skewX(0deg);
+}
+
+
+
+/* Hover Animations */
+
+
+.animate.hover-wiggle:hover {
+  animation-name: wiggle;
+  animation-duration: 1.5s;
+}
+
+.animate.hover-skew:hover {
+  animation-name: skew;
+  animation-duration: 1.5s;
+}
+
+.animate.hover-puls:hover {
+  animation-name: puls;
+  animation-duration: 2s;
+}
+
+.animate.hover-puls-fast:hover {
+  animation-name: puls;
+  animation-duration: 0.5s;
+}
+
+
+/* Keyframe Animations */
+
+.animate.puls {
+  animation-name: puls;
+  animation-duration: 2s;
+}
+
+.animate.puls-fast {
+  animation-name: puls;
+  animation-duration: 0.5s;
+}
+
+.animate.wiggle {
+  animation-name: wiggle;
+  animation-duration: 1.5s;
+}
+
+.animate.wiggle-fast {
+  animation-name: wiggle;
+  animation-duration: 0.3s;
+}
+
+.animate.ping {
+  animation-name: ping;
+  animation-duration: 1.5s;
+}
+
+.animate.skew {
+  animation-name: skew;
+  animation-duration: 1.5s;
+}
+
+
+
+/* Keyframes */
+
+@keyframes puls {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes wiggle {
+  25% {
+    transform: rotate(4deg);
+  }
+
+  75% {
+    transform: rotate(-4deg);
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes skew {
+  25% {
+    transform: skew(20deg);
+  }
+
+  75% {
+    transform: skew(-20deg);
+  }
+}
+
+
+
+/* Delays */
+
+.animate:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+
+.animate:nth-of-type(3) {
+  transition-delay: 0.4s;
+}
+
+.animate:nth-of-type(4) {
+  transition-delay: 0.6s;
+}
+
+.animate:nth-of-type(5) {
+  transition-delay: 0.8s;
+}
+
+.animate:nth-of-type(6) {
+  transition-delay: 1s;
+}
+
+.animate:nth-of-type(7) {
+  transition-delay: 1.2s;
+}
+
+.animate:nth-of-type(8) {
+  transition-delay: 1.4s;
+}
+
+.animate:nth-of-type(9) {
+  transition-delay: 1.6s;
+}
+
+.animate:nth-of-type(10) {
+  transition-delay: 1.8s;
+}
+
+.animate:nth-of-type(11) {
+  transition-delay: 2s;
+}
+
+.animate:nth-of-type(12) {
+  transition-delay: 2.2s;
+}
+
+.animate:nth-of-type(13) {
+  transition-delay: 2.4s;
+}
+
+.animate:nth-of-type(14) {
+  transition-delay: 2.6s;
+}
+
+.animate:nth-of-type(15) {
+  transition-delay: 2.8s;
+}
+
+.animate:nth-of-type(16) {
+  transition-delay: 3s;
+}
+
+.animate:nth-of-type(17) {
+  transition-delay: 3.2s;
+}
+
+.animate:nth-of-type(18) {
+  transition-delay: 3.4s;
+}
+
+.animate:nth-of-type(19) {
+  transition-delay: 3.6s;
+}
+
+.animate:nth-of-type(20) {
+  transition-delay: 3.8s;
+}
+
+.animate:nth-of-type(21) {
+  transition-delay: 4s;
+}
+
+.animate:nth-of-type(22) {
+  transition-delay: 4.2s;
+}
+
+.animate:nth-of-type(23) {
+  transition-delay: 4.4s;
+}
+
+.animate:nth-of-type(24) {
+  transition-delay: 4.6s;
+}
+
+.animate:nth-of-type(25) {
+  transition-delay: 4.8s;
+}
+
+.animate:nth-of-type(26) {
+  transition-delay: 5s;
+}
+
+.animate:nth-of-type(27) {
+  transition-delay: 5.2s;
+}
+
+.animate:nth-of-type(28) {
+  transition-delay: 5.4s;
+}
+
+.animate:nth-of-type(29) {
+  transition-delay: 5.6s;
+}
+
+.animate:nth-of-type(30) {
+  transition-delay: 5.8s;
+}
+
+.animate:nth-of-type(31) {
+  transition-delay: 6s;
+}
+
+.animate:nth-of-type(32) {
+  transition-delay: 6.2s;
+}
+
+.animate:nth-of-type(33) {
+  transition-delay: 6.4s;
+}

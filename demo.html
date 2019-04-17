@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>animate.css - pure css animations by leon zündel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+	</head>
+
+	<body>
+
+    <h1>animate.css</h1>
+
+    <p>pure css animations by leon zündel</p>
+
+    <h2>viewport animations</h2>
+
+<div class="grid">
+
+<div class="button animate">animate</div>
+
+<div class="button animate top">animate top</div>
+
+<div class="button animate bottom">animate bottom</div>
+
+<div class="button animate left">animate left</div>
+
+<div class="button animate right">animate right</div>
+
+<div class="button animate zoom-in">animate zoom-in</div>
+
+<div class="button animate zoom-out">animate zoom-out</div>
+
+<div class="button animate zoom-in-xl">animate zoom-in-xl</div>
+
+<div class="button animate zoom-out-xl">animate zoom-out-xl</div>
+
+<div class="button animate rotate-left">animate rotate-left</div>
+
+<div class="button animate rotate-right">animate rotate-right</div>
+
+<div class="button animate spin">animate spin</div>
+
+<div class="button animate spin-back">animate spin-back</div>
+
+<div class="button animate spin-long">animate spin-long</div>
+
+<div class="button animate spin-long-back">animate spin-long-back</div>
+
+<div class="button animate skew-left">animate skew-left</div>
+
+<div class="button animate skew-right">animate skew-right</div>
+
+
+</div>
+
+
+
+<h2>hover animations</h2>
+
+<div class="grid">
+
+<div class="hover animate hover-wiggle">animate hover-wiggle</div>
+
+<div class="hover animate hover-skew">animate hover-skew</div>
+
+<div class="hover animate hover-puls">animate hover-puls</div>
+
+<div class="hover animate hover-puls-fast">animate hover-puls-fast</div>
+
+
+</div>
+
+
+
+<h2>attraction animations</h2>
+
+<div class="grid">
+
+<div class="action animate puls">animate puls</div>
+
+<div class="action animate puls-fast">animate puls-fast</div>
+
+<div class="action animate wiggle">animate wiggle</div>
+
+<div class="action animate wiggle-fast">animate wiggle-fast</div>
+
+<div class="action animate ping">animate ping</div>
+
+<div class="action animate skew">animate skew</div>
+
+
+
+</div>
+
+
+<!-- Viewport Animations -->
+
+<script>
+
+jQuery(document).ready(function ($) {
+    function checkViewportAnimations() {
+        $(".animate").each(function (index, element) {
+            if(isElementOutViewport(element)){
+                return;
+            }
+            $(this).addClass('active');
+        });
+    }
+
+    checkViewportAnimations();
+
+    $(window).scroll(function () {
+        checkViewportAnimations();
+    });
+});
+
+</script>
+
+<script>
+
+window.isElementOutViewport = function (el) {
+    if(el == null){
+        return false;
+    }
+    var rect = el.getBoundingClientRect();
+    return rect.bottom < 0 || rect.right < 0 || rect.left > window.innerWidth || rect.top > window.innerHeight;
+};
+
+</script>
+	</body>
+</html>
