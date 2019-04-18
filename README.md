@@ -19,7 +19,7 @@ you can choose between:
 
 **attraction animations need to get the following css code to play: `animation-playstate: running` and `animation-iteration-count: infinite;` to replay infinitely**
 
-**for the viewport animations you also need to add this codesnippet to your functions.js or into `<script>` tags:**
+**for the viewport animations you also need jQuery (`<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>`) and this codesnippet in your functions.js or inside `<script>` `</script>` tags:**
 ```
 jQuery(document).ready(function ($) {
     function checkViewportAnimations() {
