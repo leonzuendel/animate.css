@@ -80,6 +80,10 @@ p {
 	text-align: center;
 }
 
+.grid.equal .animate {
+	height: 3em;
+}
+
 /* Button */
 
 .button {
