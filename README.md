@@ -17,9 +17,13 @@ you can choose between:
 3. have a look at the demo.html (or the link above) and add the name of the animation as a class to your element/s or copy the html code (for loading animations) into your html document
 4. let the animate.css do all the magic
 
-**attraction animations need to get the following css code to play: `animation-playstate: running` and `animation-iteration-count: infinite;` to replay infinitely**
+**attraction animations**
 
-**for the viewport animations you also need [jQuery](https://jquery.com) (`<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>`) and this codesnippet in your functions.js or inside `<script>` `</script>` tags:**
+attraction animations need to get the following css code to play: `animation-playstate: running` and `animation-iteration-count: infinite;` to replay infinitely
+
+**viewport animations**
+
+for the viewport animations you also need [jQuery](https://jquery.com) (`<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>`) and this codesnippet in your functions.js or inside `<script>` `</script>` tags:
 ```
 jQuery(document).ready(function ($) {
     function checkViewportAnimations() {
