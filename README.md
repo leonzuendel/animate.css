@@ -6,6 +6,7 @@ you can choose between:
 * viewport animations
 * hover animations 
 * attraction animations
+* loading animations
 
 [view demo here](https://raw.githack.com/leonzuendel/animate.css/master/demo.html)
 
@@ -13,8 +14,10 @@ you can choose between:
 
 1. download the file/s and move the animate.css into your project folder
 2. link the animate.css to your html document with `<link rel="stylesheet" href="animate.css">`
-3. have a look at the demo.html (or the link above) and add the name of the animation as a class to your element/s
+3. have a look at the demo.html (or the link above) and add the name of the animation as a class to your element/s or copy the html code (for loading animations) into your html document
 4. let the animate.css do all the magic
+
+**attraction animations need to get the following css code to play: `animation-playstate: running` and `animation-iteration-count: infinite;` to replay infinitely**
 
 **for the viewport animations you also need to add this codesnippet to your functions.js or into `<script>` tags:**
 ```
