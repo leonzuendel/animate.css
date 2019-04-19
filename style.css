@@ -186,4 +186,8 @@ p {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  h1 { 
+   font-size: 30px;
+  }
 }
